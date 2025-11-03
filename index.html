@@ -10,21 +10,15 @@
     body {
       font-family: 'Inter', sans-serif;
       margin: 0;
-      background: #f9fafc;
+      background: #fafbff;
       color: #1a1a1a;
       line-height: 1.6;
-      overflow-x: hidden;
     }
 
+    /* HEADER */
     header {
       text-align: center;
       padding: 3rem 1rem 2rem;
-      animation: fadeIn 1.5s ease;
-    }
-
-    @keyframes fadeIn {
-      from {opacity: 0; transform: translateY(15px);}
-      to {opacity: 1; transform: translateY(0);}
     }
 
     header img {
@@ -32,33 +26,29 @@
       height: 140px;
       border-radius: 50%;
       object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
       margin-bottom: 1rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-      transition: transform 0.3s ease;
     }
-
-    header img:hover { transform: scale(1.05); }
 
     h1 {
       font-size: 2.3rem;
-      margin: 0.3rem 0;
       font-weight: 700;
+      margin-bottom: 0.2rem;
     }
 
     .subtitle {
-      color: #555;
       font-size: 1.1rem;
-      margin-bottom: 0.8rem;
+      color: #4a4a4a;
+      font-weight: 500;
+      margin-bottom: 0.4rem;
     }
 
-    .links a {
-      color: #2563eb;
-      text-decoration: none;
-      font-weight: 500;
-      margin: 0 8px;
-      transition: color 0.2s ease;
+    .tagline {
+      color: #555;
+      font-size: 1rem;
+      max-width: 600px;
+      margin: 0.5rem auto 0;
     }
-    .links a:hover { color: #111; }
 
     .container {
       max-width: 1100px;
@@ -68,8 +58,8 @@
 
     h2 {
       text-align: center;
-      margin-top: 3rem;
       font-size: 1.9rem;
+      margin-top: 3rem;
     }
 
     /* ABOUT */
@@ -88,55 +78,123 @@
     /* PROJECTS */
     .projects {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       gap: 1.5rem;
       margin-top: 2rem;
     }
 
     .project-card {
+      background: white;
       border-radius: 18px;
       padding: 1.5rem;
-      color: white;
-      box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+      color: #1a1a1a;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.07);
       transition: all 0.3s ease;
+      border: 1px solid #eee;
     }
 
     .project-card:hover {
       transform: translateY(-6px);
-      box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+      box-shadow: 0 10px 18px rgba(0,0,0,0.12);
+      border-color: #6366f1;
     }
 
     .project-card h3 {
       margin-top: 0;
       font-weight: 600;
+      color: #1e1e1e;
+    }
+
+    .project-card p {
+      color: #444;
     }
 
     .project-card a {
-      color: white;
+      display: inline-block;
+      margin-top: 0.6rem;
+      color: #4f46e5;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .project-card a:hover {
       text-decoration: underline;
-      font-weight: 500;
     }
 
     /* SKILLS */
-    .skills {
+    .skills-container {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 0.6rem;
+      gap: 0.8rem;
       margin-top: 2rem;
     }
 
-    .skill-tag {
-      background: linear-gradient(135deg, #667eea, #764ba2);
-      color: white;
-      padding: 0.4rem 0.8rem;
-      border-radius: 9999px;
-      font-size: 0.9rem;
-      box-shadow: 0 3px 8px rgba(102,126,234,0.25);
-      transition: transform 0.2s ease;
+    .skill-badge {
+      background: white;
+      border: 1px solid #e0e0e0;
+      border-radius: 25px;
+      padding: 0.5rem 1rem;
+      font-size: 0.95rem;
+      color: #333;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      transition: all 0.2s ease-in-out;
     }
 
-    .skill-tag:hover { transform: scale(1.05); }
+    .skill-badge:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 5px 10px rgba(99, 102, 241, 0.25);
+      border-color: #6366f1;
+      color: #6366f1;
+    }
+
+    /* CONNECT */
+    .connect {
+      text-align: center;
+      padding: 3rem 1rem 2rem;
+      background: #f5f7ff;
+      border-top: 1px solid #eee;
+    }
+
+    .connect h2 {
+      margin-bottom: 1rem;
+    }
+
+    .connect p {
+      color: #444;
+      max-width: 650px;
+      margin: 0 auto 2rem;
+      font-size: 1.05rem;
+    }
+
+    .connect-icons {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      flex-wrap: wrap;
+    }
+
+    .contact-card {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      font-size: 1rem;
+    }
+
+    .contact-card img {
+      width: 28px;
+      height: 28px;
+    }
+
+    .contact-card a {
+      color: #5b21b6;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .contact-card a:hover {
+      text-decoration: underline;
+    }
 
     footer {
       text-align: center;
@@ -148,75 +206,111 @@
   </style>
 </head>
 <body>
+
+  <!-- HEADER -->
   <header>
     <img src="profile.jpg" alt="Sai Snehitha Ramisetty" />
     <h1>Sai Snehitha Ramisetty</h1>
-    <div class="subtitle">Data Scientist · Generative AI · NLP · ML Engineering · Cloud MLOps</div>
-    <div class="links">
-      <a href="mailto:sai.snehitha@example.com">Email</a> |
-      <a href="https://www.linkedin.com/in/sai-snehitha-ramisetty/">LinkedIn</a> |
-      <a href="https://github.com/sai-snehitha">GitHub</a>
-    </div>
+    <div class="subtitle">Data Scientist / ML Engineer</div>
+    <div class="tagline">Crafting scalable, production-ready ML systems that turn data into measurable business impact.</div>
   </header>
 
+  <!-- ABOUT -->
   <section class="container">
     <h2>About</h2>
     <div class="about">
-      I’m a Data Scientist with over 4 years of experience designing, training, and deploying AI systems that drive measurable business outcomes. 
-      My expertise lies at the intersection of <strong>machine learning, NLP, and cloud-based MLOps</strong>. I specialize in turning complex data 
-      challenges into production-ready solutions—building models that are explainable, scalable, and performance-tuned for real-world impact. <br><br>
-      I’ve worked with diverse tech stacks across <strong>Generative AI (LLMs, LangChain, Transformers)</strong>, predictive analytics, 
-      and end-to-end ML pipelines on <strong>AWS, GCP, and Snowflake</strong>. Beyond modeling, I focus on automation, monitoring, and model lifecycle 
-      management to ensure AI solutions remain reliable and maintainable in production. <br><br>
-      Passionate about solving real-world problems through data-driven intelligence, I’m continuously exploring innovations in 
-      <strong>LLMs, model interpretability, and scalable AI infrastructure</strong>.
+      I’m a Data Scientist specializing in building explainable, reliable, and scalable AI systems that bridge the gap between data and decision-making. 
+      With 4+ years of experience, I’ve developed solutions across <strong>banking, finance, and enterprise domains</strong> — applying machine learning, 
+      NLP, and data engineering to solve complex business problems. <br><br>
+      My expertise spans <strong>model development, deployment, and MLOps</strong>, leveraging tools like AWS, MLflow, Docker, and Streamlit to 
+      operationalize insights efficiently. I’m passionate about crafting data-driven solutions that don’t just perform well in notebooks but deliver 
+      measurable impact in production.
     </div>
   </section>
 
+  <!-- PROJECTS -->
   <section class="container">
-    <h2>My Projects</h2>
+    <h2>Projects</h2>
     <div class="projects">
-      <div class="project-card" style="background:linear-gradient(135deg,#667eea,#764ba2);">
+
+      <div class="project-card">
         <h3>🚕 NYC Taxi Demand Forecasting</h3>
-        <p>Developed an end-to-end pipeline using AWS Lambda, S3, and LightGBM for city-wide demand prediction. Automated ETL, feature engineering, and built interactive Power BI dashboards.</p>
+        <p>End-to-end pipeline using AWS Lambda, S3, and LightGBM for city-wide demand prediction with automated feature engineering and Power BI dashboards.</p>
         <p><strong>Tech:</strong> Python, AWS, LightGBM, Power BI, Time Series</p>
         <a href="https://github.com/sai-snehitha/nyc-taxi-demand-forecasting" target="_blank">View Repository →</a>
       </div>
 
-      <div class="project-card" style="background:linear-gradient(135deg,#43cea2,#185a9d);">
+      <div class="project-card">
         <h3>₿ Real-Time Crypto Analytics</h3>
-        <p>Designed a real-time trading simulation system using Docker, Redpanda (Kafka), and Streamlit. Enabled streaming analytics with custom trade strategies and visual dashboards.</p>
-        <p><strong>Tech:</strong> Python, Streamlit, Docker, Redpanda, Kafka, DuckDB</p>
+        <p>Designed a real-time crypto analytics system using Docker, Redpanda, and Streamlit for streaming visualization and trade simulation.</p>
+        <p><strong>Tech:</strong> Python, Streamlit, Docker, Redpanda, Kafka</p>
         <a href="https://github.com/sai-snehitha/real-time-crypto-project" target="_blank">View Repository →</a>
       </div>
 
-      <div class="project-card" style="background:linear-gradient(135deg,#ff9966,#ff5e62);">
+      <div class="project-card">
         <h3>🚲 Citi Bike Prediction System</h3>
-        <p>Implemented an AWS-based MLOps solution with MLflow for experiment tracking and LightGBM for hourly demand prediction. Deployed a Streamlit dashboard for model monitoring.</p>
-        <p><strong>Tech:</strong> Python, MLflow, LightGBM, AWS, MLOps</p>
+        <p>Built MLOps pipeline on AWS with MLflow and LightGBM for demand forecasting, including model tracking, registry, and automated retraining.</p>
+        <p><strong>Tech:</strong> Python, MLflow, AWS, LightGBM, Streamlit</p>
         <a href="https://github.com/sai-snehitha/citi-bike-prediction-system" target="_blank">View Repository →</a>
       </div>
 
-      <div class="project-card" style="background:linear-gradient(135deg,#ff9a9e,#fad0c4); color:#1e1e1e;">
+      <div class="project-card">
         <h3>👥 Employee Attrition ETL & Insights</h3>
-        <p>Built ETL workflows for HR analytics and developed an interactive Streamlit dashboard to visualize attrition drivers and predictive risk scores.</p>
-        <p><strong>Tech:</strong> Python, Pandas, PostgreSQL, Streamlit, HR Analytics</p>
+        <p>Created an end-to-end ETL pipeline for HR data and developed a Streamlit dashboard showing attrition trends and predictive retention insights.</p>
+        <p><strong>Tech:</strong> Python, Pandas, Streamlit, PostgreSQL, HR Analytics</p>
         <a href="https://github.com/sai-snehitha/Employeeattri" target="_blank">View Repository →</a>
       </div>
 
-      <div class="project-card" style="background:linear-gradient(135deg,#36d1dc,#5b86e5);">
+      <div class="project-card">
         <h3>❄️ Snowflake Ride Analytics</h3>
-        <p>Built a cloud-native pipeline using Snowflake for mobility analytics. Optimized SQL queries and transformations for analytical insights from large-scale ride data.</p>
+        <p>Developed a cloud-native data warehouse on Snowflake for large-scale ride analytics, optimizing SQL transformations and data modeling.</p>
         <p><strong>Tech:</strong> SQL, Snowflake, ETL, Data Modeling</p>
         <a href="https://github.com/sai-snehitha/NYC_Pred_Snowflake" target="_blank">View Repository →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="container">
+    <h2>Skills & Technologies</h2>
+    <div class="skills-container">
+      <span class="skill-badge">Python</span><span class="skill-badge">R</span><span class="skill-badge">SQL</span><span class="skill-badge">PySpark</span>
+      <span class="skill-badge">TensorFlow</span><span class="skill-badge">PyTorch</span><span class="skill-badge">Scikit-learn</span><span class="skill-badge">XGBoost</span>
+      <span class="skill-badge">LightGBM</span><span class="skill-badge">MLflow</span><span class="skill-badge">MLOps</span><span class="skill-badge">NLP</span>
+      <span class="skill-badge">LLMs</span><span class="skill-badge">LangChain</span><span class="skill-badge">Hugging Face</span>
+      <span class="skill-badge">Generative AI</span><span class="skill-badge">Streamlit</span><span class="skill-badge">Docker</span>
+      <span class="skill-badge">Snowflake</span><span class="skill-badge">AWS</span><span class="skill-badge">Airflow</span><span class="skill-badge">Tableau</span>
+      <span class="skill-badge">Power BI</span><span class="skill-badge">Data Engineering</span><span class="skill-badge">Time Series</span>
+      <span class="skill-badge">ETL</span><span class="skill-badge">Analytics</span><span class="skill-badge">Statistical Modeling</span>
+    </div>
+  </section>
+
+  <!-- CONNECT -->
+  <section class="connect">
+    <h2>Let's Connect</h2>
+    <p>I'm always open to data science opportunities, technical collaborations, and impactful analytics projects. Feel free to reach out directly.</p>
+    <div class="connect-icons">
+      <div class="contact-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="email" />
+        <div>
+          <strong>Email</strong><br>
+          <a href="mailto:snehitha2303@gmail.com">snehitha2303@gmail.com</a>
+        </div>
+      </div>
+      <div class="contact-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="linkedin" />
+        <div>
+          <strong>LinkedIn</strong><br>
+          <a href="https://www.linkedin.com/in/sai-snehitha-ramisetty/" target="_blank">LinkedIn</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="container">
-    <h2>Skills & Technologies</h2>
-    <div class="skills">
-      <span class="skill-tag">Python</span><span class="skill-tag">SQL</span><span class="skill-tag">PySpark</span><span class="skill-tag">R</span><span class="skill-tag">SAS</span>
-      <span class="skill-tag">Scikit-learn</span><span class="skill-tag">TensorFlow</span><span class="skill-tag">PyTorch</span><span class="skill-tag">LightGBM</span><span class="skill-tag">XGBoost</span>
-      <span class="skill-tag">MLflow</span><span class="skill-tag">MLOps</span><span class="skill-tag">NLP</span><span class="skill-tag">LLMs</span><span class="skill-tag">Generative AI</span>
-      <span class="skill-tag">LangChain</span><span class="skill-tag">Hugging Face</span><span class="skill-tag">Docker</span><span class="skill-tag">Airflow</span><span class="skill-tag">Streamlit<
+  <footer>
+    © 2025 Sai Snehitha Ramisetty · Built with ❤️ using HTML & CSS
+  </footer>
+
+</body>
+</html>
