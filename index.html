@@ -2,247 +2,172 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Sai Snehitha Ramisetty | Data Scientist </title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sai Snehitha Ramisetty | Data Scientist/ML Engineer</title>
   <style>
     body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: 'Inter', system-ui, sans-serif;
       margin: 0;
-      padding: 0;
-      background: #0f172a;
-      color: #e5e7eb;
-    }
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 2rem 1.5rem 4rem;
+      background-color: #f8fafc;
+      color: #1e1e1e;
+      line-height: 1.6;
     }
     header {
-      text-align: left;
-      margin-bottom: 2.5rem;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+    header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     }
     h1 {
       font-size: 2.2rem;
-      margin-bottom: 0.5rem;
-      color: #f9fafb;
+      margin: 0.5rem 0;
     }
     h2 {
-      font-size: 1.4rem;
-      margin-top: 2.5rem;
-      margin-bottom: 0.75rem;
-      color: #e5e7eb;
-      border-bottom: 1px solid #1f2933;
-      padding-bottom: 0.4rem;
+      text-align: center;
+      margin-top: 3rem;
     }
-    p {
-      line-height: 1.6;
-      margin: 0.3rem 0;
-    }
-    .tagline {
-      color: #9ca3af;
-      margin-bottom: 0.75rem;
+    .subtitle {
+      color: #555;
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
     }
     .links a {
-      margin-right: 0.75rem;
+      margin: 0 10px;
+      color: #2563eb;
       text-decoration: none;
-      color: #93c5fd;
-      font-size: 0.95rem;
+      font-weight: 500;
     }
-    .links a:hover {
-      text-decoration: underline;
-    }
-    .section-text {
-      font-size: 0.96rem;
-      color: #d1d5db;
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem;
     }
     .projects {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 1.25rem;
-      margin-top: 0.75rem;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
     }
     .project-card {
-      background: #020617;
-      border: 1px solid #1f2933;
-      border-radius: 0.8rem;
-      padding: 1rem 1.1rem;
+      border-radius: 20px;
+      padding: 1.5rem;
+      color: white;
+      transition: transform 0.25s ease;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
     }
-    .project-card h3 {
-      margin-top: 0;
-      margin-bottom: 0.4rem;
-      font-size: 1.02rem;
-      color: #e5e7eb;
+    .project-card:hover {
+      transform: translateY(-5px);
     }
-    .project-card p {
-      font-size: 0.9rem;
-      margin-bottom: 0.5rem;
-    }
-    .badge-row {
-      margin-top: 0.3rem;
-    }
-    .badge {
-      display: inline-block;
-      font-size: 0.75rem;
-      background: #1f2937;
-      color: #e5e7eb;
-      padding: 0.18rem 0.5rem;
-      border-radius: 999px;
-      margin-right: 0.25rem;
-      margin-top: 0.2rem;
-    }
-    .project-link {
-      font-size: 0.85rem;
-      color: #93c5fd;
-      text-decoration: none;
-    }
-    .project-link:hover {
+    .project-card h3 { margin-top: 0; }
+    .project-card a {
+      color: white;
       text-decoration: underline;
     }
-    .skills-list {
+    .skills {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.4rem;
-      margin-top: 0.5rem;
+      justify-content: center;
+      gap: 0.6rem;
+      margin-top: 2rem;
     }
-    .skills-list span {
-      background: #020617;
-      border-radius: 999px;
-      padding: 0.25rem 0.7rem;
-      font-size: 0.8rem;
-      border: 1px solid #1f2933;
-    }
-    footer {
-      margin-top: 3rem;
-      font-size: 0.85rem;
-      color: #6b7280;
-      text-align: left;
-    }
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 1.8rem;
-      }
+    .skill-tag {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      padding: 0.4rem 0.8rem;
+      border-radius: 9999px;
+      font-size: 0.9rem;
+      box-shadow: 0 3px 8px rgba(102,126,234,0.25);
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Sai Snehitha Ramisetty</h1>
-      <p class="tagline">Data Scientist · Generative AI & NLP · ML Engineering & MLOps</p>
-      <div class="links">
-        <a href="mailto:saisnehitha.r@themailpad.com">Email</a>
-        <a href="https://www.linkedin.com/in/sai-snehitha-ramisetty-b52089223" target="_blank">LinkedIn</a>
-        <a href="https://github.com/sai-snehitha" target="_blank">GitHub</a>
+  <header>
+    <!-- 📸 Your Photo -->
+    <img src="profile.jpg" alt="Sai Snehitha Ramisetty" />
+    <h1>Sai Snehitha Ramisetty</h1>
+    <div class="subtitle">Data Scientist · Generative AI & NLP · ML Engineering · Cloud MLOps</div>
+    <div class="links">
+      <a href="mailto:sai.snehitha@example.com">Email</a> |
+      <a href="https://www.linkedin.com/in/sai-snehitha-ramisetty/">LinkedIn</a> |
+      <a href="https://github.com/sai-snehitha">GitHub</a>
+    </div>
+  </header>
+
+  <section class="container">
+    <h2>About</h2>
+    <p>
+      Data Scientist with 4+ years of experience designing and deploying end-to-end machine learning and AI solutions. 
+      Skilled in building explainable, production-grade pipelines that transform data into business value. 
+      Experienced across Generative AI, NLP, predictive modeling, and cloud MLOps.
+    </p>
+  </section>
+
+  <section class="container">
+    <h2>My Projects</h2>
+    <div class="projects">
+      
+      <div class="project-card" style="background:linear-gradient(135deg,#667eea,#764ba2);">
+        <h3>🚕 NYC Taxi Demand Forecasting</h3>
+        <h4>(AWS + ML + Power BI)</h4>
+        <p>Built an end-to-end forecasting pipeline for large-scale taxi trips using LightGBM and feature engineering. Automated data ingestion via AWS Lambda & S3 and delivered interactive Power BI dashboards.</p>
+        <p><strong>Tech:</strong> Python, LightGBM, AWS, Power BI, Time-Series</p>
+        <a href="https://github.com/sai-snehitha/nyc-taxi-demand-forecasting" target="_blank">View Repository →</a>
       </div>
-    </header>
 
-    <section>
-      <h2>About</h2>
-      <p class="section-text">
-        Data Scientist with 4 years of experience designing and deploying end-to-end AI and machine learning solutions. 
-        I work across Generative AI, NLP, and predictive modeling, using tools like GPT-4, LangChain, Vertex AI, and 
-        cloud platforms (AWS, GCP) to build systems that automate decision-making, detect anomalies, and extract value 
-        from large-scale data.
-      </p>
-      <p class="section-text">
-        I enjoy building AI that actually gets used — models and pipelines that are explainable, scalable, and aligned 
-        with business goals. My recent work spans compliance automation, fraud and risk scoring, and production-grade 
-        ML pipelines with MLOps best practices.
-      </p>
-    </section>
-
-    <section>
-      <h2>Projects</h2>
-      <div class="projects">
-        <div class="project-card">
-          <h3>Fraud Detection with Gradient Boosting</h3>
-          <p>
-            Built a fraud detection model using XGBoost / tree-based methods, improving recall on risky transactions while 
-            controlling false positives. Includes feature engineering, model evaluation, and explainability.
-          </p>
-          <div class="badge-row">
-            <span class="badge">Python</span>
-            <span class="badge">XGBoost</span>
-            <span class="badge">Scikit-learn</span>
-          </div>
-          <a class="project-link" href="https://github.com/sai-snehitha" target="_blank">
-            View on GitHub →
-          </a>
-        </div>
-
-        <div class="project-card">
-          <h3>LLM-based Document Summarizer</h3>
-          <p>
-            Implemented an LLM-powered workflow using GPT-style models to summarize long-form text and reports, 
-            with prompt engineering and evaluation for summary quality and consistency.
-          </p>
-          <div class="badge-row">
-            <span class="badge">LLMs</span>
-            <span class="badge">NLP</span>
-            <span class="badge">Python</span>
-          </div>
-          <a class="project-link" href="https://github.com/sai-snehitha" target="_blank">
-            View on GitHub →
-          </a>
-        </div>
-
-        <div class="project-card">
-          <h3>Customer Churn Prediction</h3>
-          <p>
-            End-to-end churn prediction pipeline with data cleaning, feature engineering, model training, and metric 
-            tracking. Focused on identifying high-risk customers and supporting targeted retention strategies.
-          </p>
-          <div class="badge-row">
-            <span class="badge">Python</span>
-            <span class="badge">Pandas</span>
-            <span class="badge">Machine Learning</span>
-          </div>
-          <a class="project-link" href="https://github.com/sai-snehitha" target="_blank">
-            View on GitHub →
-          </a>
-        </div>
-
-        <div class="project-card">
-          <h3>Interactive Analytics Dashboard</h3>
-          <p>
-            Developed interactive dashboards to visualize KPIs, model outputs, and trends, helping stakeholders explore 
-            data and insights without writing queries.
-          </p>
-          <div class="badge-row">
-            <span class="badge">Tableau / Power BI</span>
-            <span class="badge">SQL</span>
-            <span class="badge">Visualization</span>
-          </div>
-          <a class="project-link" href="https://github.com/sai-snehitha" target="_blank">
-            View on GitHub →
-          </a>
-        </div>
+      <div class="project-card" style="background:linear-gradient(135deg,#43cea2,#185a9d);">
+        <h3>₿ Real-Time Crypto Analytics</h3>
+        <h4>(Streaming Data + Docker)</h4>
+        <p>Developed a containerized crypto analytics pipeline using Streamlit, Docker, and Redpanda. Enabled real-time visualization, trading simulation, and modularized services for ingestion and inference.</p>
+        <p><strong>Tech:</strong> Python, Streamlit, Docker, Redpanda, Kafka, DuckDB</p>
+        <a href="https://github.com/sai-snehitha/real-time-crypto-project" target="_blank">View Repository →</a>
       </div>
-    </section>
 
-    <section>
-      <h2>Skills</h2>
-      <div class="skills-list">
-        <span>Python</span>
-        <span>SQL</span>
-        <span>Machine Learning</span>
-        <span>Deep Learning</span>
-        <span>Generative AI</span>
-        <span>NLP</span>
-        <span>LLMs</span>
-        <span>LangChain</span>
-        <span>Vertex AI</span>
-        <span>AWS</span>
-        <span>GCP</span>
-        <span>MLOps</span>
-        <span>Power BI</span>
-        <span>Tableau</span>
+      <div class="project-card" style="background:linear-gradient(135deg,#ff9966,#ff5e62);">
+        <h3>🚲 Citi Bike Prediction System</h3>
+        <h4>(AWS + MLflow + MLOps)</h4>
+        <p>Designed an end-to-end MLOps pipeline predicting Citi Bike ride demand. Integrated MLflow for experiment tracking, registry, and AWS S3 for scalable deployment.</p>
+        <p><strong>Tech:</strong> Python, MLflow, LightGBM, AWS S3, Streamlit</p>
+        <a href="https://github.com/sai-snehitha/citi-bike-prediction-system" target="_blank">View Repository →</a>
       </div>
-    </section>
 
-    <footer>
-      <p>Open to opportunities in Data Science, AI/ML, and Generative AI roles.</p>
-    </footer>
-  </div>
+      <div class="project-card" style="background:linear-gradient(135deg,#ff9a9e,#fad0c4); color:#1e1e1e;">
+        <h3>👥 Employee Attrition ETL & Insights</h3>
+        <h4>(HR Analytics)</h4>
+        <p>Built ETL pipelines integrating HR data and created a Streamlit dashboard revealing attrition trends and predictive insights for retention.</p>
+        <p><strong>Tech:</strong> Python, Pandas, Streamlit, PostgreSQL, HR Analytics</p>
+        <a href="https://github.com/sai-snehitha/Employeeattri" target="_blank">View Repository →</a>
+      </div>
+
+      <div class="project-card" style="background:linear-gradient(135deg,#36d1dc,#5b86e5);">
+        <h3>❄️ Snowflake Ride Analytics</h3>
+        <h4>(Cloud + SQL)</h4>
+        <p>Engineered a Snowflake-based cloud analytics solution for large mobility datasets with optimized ETL and SQL transformations for business insights.</p>
+        <p><strong>Tech:</strong> SQL, Snowflake, Cloud Warehouse, Data Modeling</p>
+        <a href="https://github.com/sai-snehitha/NYC_Pred_Snowflake" target="_blank">View Repository →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="container">
+    <h2>Skills & Technologies</h2>
+    <div class="skills">
+      <span class="skill-tag">Python</span><span class="skill-tag">SQL</span><span class="skill-tag">PySpark</span>
+      <span class="skill-tag">R</span><span class="skill-tag">SAS</span><span class="skill-tag">Scikit-learn</span>
+      <span class="skill-tag">TensorFlow</span><span class="skill-tag">PyTorch</span><span class="skill-tag">LightGBM</span>
+      <span class="skill-tag">XGBoost</span><span class="skill-tag">MLflow</span><span class="skill-tag">MLOps</span>
+      <span class="skill-tag">NLP</span><span class="skill-tag">LLMs</span><span class="skill-tag">Generative AI</span>
+      <span class="skill-tag">Hugging Face</span><span class="skill-tag">Docker</span><span class="skill-tag">Airflow</span>
+      <span class="skill-tag">Redpanda</span><span class="skill-tag">Streamlit</span><span class="skill-tag">Power BI</span>
+      <span class="skill-tag">AWS</span><span class="skill-tag">Snowflake</span><span class="skill-tag">Databricks</span>
+      <span class="skill-tag">Analytics</span><span class="skill-tag">Statistical Modeling</span><span class="skill-tag">ETL</span>
+      <span class="skill-tag">Time Series</span><span class="skill-tag">Data Visualization</span><span class="skill-tag">Computer Vision</span>
+    </div>
+  </section>
 </body>
 </html>
