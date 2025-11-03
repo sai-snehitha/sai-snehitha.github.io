@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sai Snehitha Ramisetty | Data Scientist Portfolio</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
     body {
       font-family: 'Inter', sans-serif;
@@ -18,38 +18,55 @@
     /* HEADER */
     header {
       text-align: center;
-      padding: 3rem 1rem 2rem;
+      padding: 3rem 1rem 1rem; /* reduced bottom padding */
     }
 
     header img {
-      width: 140px;
-      height: 140px;
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
       object-fit: cover;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-      margin-bottom: 1rem;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+      margin-bottom: 1.3rem;
+      border: 3px solid #fff;
     }
 
     h1 {
-      font-size: 2.3rem;
-      font-weight: 700;
-      margin-bottom: 0.2rem;
+      font-size: 2.8rem;
+      font-weight: 800;
+      margin-bottom: 0.3rem;
+      color: #1a1a1a;
+      letter-spacing: 0.5px;
     }
 
     .subtitle {
-      font-size: 1.1rem;
-      color: #4a4a4a;
-      font-weight: 500;
-      margin-bottom: 0.4rem;
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: 0.6px;
+      margin-bottom: 0.8rem;
+      background: linear-gradient(90deg, #6a11cb, #2575fc, #00c6ff);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: gradientShift 4s ease infinite;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% center; }
+      50% { background-position: 100% center; }
+      100% { background-position: 0% center; }
     }
 
     .tagline {
-      color: #555;
-      font-size: 1rem;
-      max-width: 600px;
-      margin: 0.5rem auto 0;
+      color: #333;
+      font-size: 1.15rem;
+      font-weight: 500;
+      max-width: 650px;
+      margin: 0.7rem auto 0;
+      line-height: 1.6;
     }
 
+    /* GENERAL */
     .container {
       max-width: 1100px;
       margin: auto;
@@ -211,38 +228,37 @@
   <header>
     <img src="profile.jpg" alt="Sai Snehitha Ramisetty" />
     <h1>Sai Snehitha Ramisetty</h1>
-    <div class="subtitle">Data Scientist / ML Engineer</div>
-    <div class="tagline">Crafting scalable, production-ready ML systems that turn data into measurable business impact.</div>
+    <div class="subtitle">Data Scientist · ML Engineer</div>
+    <div class="tagline">Building scalable, production-ready AI systems that transform data into measurable business impact.</div>
   </header>
 
   <!-- ABOUT -->
   <section class="container">
     <h2>About Me</h2>
     <div class="about">
-  I’m a Data Scientist and ML Engineer with a strong foundation in advanced analytics, holding a 
-  <strong>Master’s in Data Science</strong>. My academic background and hands-on experience have enabled me to design intelligent systems that connect 
-  data, algorithms, and business outcomes with measurable impact.
-  <br><br>
-  With over <strong>4 years of experience</strong> across <strong>banking, finance, and enterprise analytics</strong>, I specialize in developing 
-  scalable and explainable machine learning pipelines from raw data ingestion to production deployment. My approach blends 
-  statistical rigor with engineering best practices to deliver end-to-end solutions that are both reliable and interpretable.
-  <br><br>
-  My expertise spans <strong>machine learning, deep learning, NLP, Generative AI, and predictive modeling</strong>. I’m skilled in building 
-  <strong>cloud-based ML systems</strong> using tools like <strong>AWS, Databricks, MLflow, Docker, and Airflow</strong>, and deploying 
-  <strong>interactive AI applications</strong> through frameworks such as <strong>Streamlit, LangChain, and Hugging Face</strong>.
-  <br><br>
-  I’m deeply passionate about bridging the gap between model experimentation and production. Whether it’s optimizing pipelines, 
-  fine-tuning large language models, or implementing MLOps practices, I focus on making data science solutions 
-  <strong>scalable, explainable, and impactful</strong>.
-</div>
-
+      I’m a Data Scientist and ML Engineer with a strong foundation in advanced analytics, holding a 
+      <strong>Master’s in Data Science</strong>. My academic background and hands-on experience have enabled me to design intelligent systems that connect 
+      data, algorithms, and business outcomes with measurable impact.
+      <br><br>
+      With over <strong>4 years of experience</strong> across <strong>banking, finance, and enterprise analytics</strong>, I specialize in developing 
+      scalable and explainable machine learning pipelines from raw data ingestion to production deployment. My approach blends 
+      statistical rigor with engineering best practices to deliver end-to-end solutions that are both reliable and interpretable.
+      <br><br>
+      My expertise spans <strong>machine learning, deep learning, NLP, Generative AI, and predictive modeling</strong>. I’m skilled in building 
+      <strong>cloud-based ML systems</strong> using tools like <strong>AWS, Databricks, MLflow, Docker, and Airflow</strong>, and deploying 
+      <strong>interactive AI applications</strong> through frameworks such as <strong>Streamlit, LangChain, and Hugging Face</strong>.
+      <br><br>
+      I’m deeply passionate about bridging the gap between model experimentation and production. Whether it’s optimizing pipelines, 
+      fine-tuning large language models, or implementing MLOps practices, I focus on making data science solutions 
+      <strong>scalable, explainable, and impactful</strong>.
+    </div>
   </section>
 
   <!-- PROJECTS -->
   <section class="container">
     <h2>My Projects</h2>
     <div class="projects">
-
+      <!-- Project Cards (unchanged) -->
       <div class="project-card">
         <h3>🚕 NYC Taxi Demand Forecasting</h3>
         <p>End-to-end pipeline using AWS Lambda, S3, and LightGBM for city-wide demand prediction with automated feature engineering and Power BI dashboards.</p>
@@ -272,55 +288,3 @@
       </div>
 
       <div class="project-card">
-        <h3>❄️ Snowflake Ride Analytics</h3>
-        <p>Developed a cloud-native data warehouse on Snowflake for large-scale ride analytics, optimizing SQL transformations and data modeling.</p>
-        <p><strong>Tech:</strong> SQL, Snowflake, ETL, Data Modeling</p>
-        <a href="https://github.com/sai-snehitha/NYC_Pred_Snowflake" target="_blank">View Repository →</a>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section class="container">
-    <h2>Skills & Technologies</h2>
-    <div class="skills-container">
-      <span class="skill-badge">Python</span><span class="skill-badge">R</span><span class="skill-badge">SQL</span><span class="skill-badge">PySpark</span>
-      <span class="skill-badge">TensorFlow</span><span class="skill-badge">PyTorch</span><span class="skill-badge">Scikit-learn</span><span class="skill-badge">XGBoost</span>
-      <span class="skill-badge">LightGBM</span><span class="skill-badge">MLflow</span><span class="skill-badge">MLOps</span><span class="skill-badge">NLP</span>
-      <span class="skill-badge">LLMs</span><span class="skill-badge">LangChain</span><span class="skill-badge">Hugging Face</span>
-      <span class="skill-badge">Generative AI</span><span class="skill-badge">Streamlit</span><span class="skill-badge">Docker</span>
-      <span class="skill-badge">Snowflake</span><span class="skill-badge">AWS</span><span class="skill-badge">Airflow</span><span class="skill-badge">Tableau</span>
-      <span class="skill-badge">Power BI</span><span class="skill-badge">Data Engineering</span><span class="skill-badge">Time Series</span>
-      <span class="skill-badge">ETL</span><span class="skill-badge">Analytics</span><span class="skill-badge">Statistical Modeling</span>
-    </div>
-  </section>
-
-  <!-- CONNECT -->
-  <section class="connect">
-    <h2>Let's Connect</h2>
-    <p>I'm always open to data science opportunities, technical collaborations, and impactful analytics projects. Feel free to reach out directly.</p>
-    <div class="connect-icons">
-      <div class="contact-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="email" />
-        <div>
-          <strong>Email</strong><br>
-          <a href="mailto:saisnehitha.r@themailpad.com">saisnehitha.r@themailpad.com</a>
-        </div>
-      </div>
-      <div class="contact-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="linkedin" />
-        <div>
-          <strong>LinkedIn</strong><br>
-          <a href="https://www.linkedin.com/in/sai-snehitha-ramisetty/" target="_blank">LinkedIn</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    © 2025 Sai Snehitha Ramisetty · Built with ❤️ using HTML & CSS
-  </footer>
-
-</body>
-</html>
